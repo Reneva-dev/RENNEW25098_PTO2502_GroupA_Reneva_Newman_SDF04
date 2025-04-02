@@ -1,10 +1,64 @@
-.h2{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:aquamarine;
-
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 8px;
+    background-color:  #6AA690;
+    color: white; 
 }
 
 body {
     background-color: #6AA690;
 }
+
+.subscribe-container button{
+    background-color: #D96248;
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+    
+input::placeholder {
+    color: #F2F2F2;
+    font-size: 15px;  
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+/* Footer Container */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: left; /* Align text to the left */
+}
+
+/* Footer Sections */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Remove bullet points from lists */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style links */
+.footer-section a {
+    color: #4CAF50; /* Green links */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+

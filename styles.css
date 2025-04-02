@@ -34,8 +34,8 @@ input::placeholder {
     grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
     gap: 20px; /* Space between columns */
     padding: 20px;
-    background-color: #333; /* Dark background */
-    color: white; /* White text */
+    background-color: #6AA690; 
+    color: black; /* black text */
     text-align: left; /* Align text to the left */
 }
 
@@ -54,7 +54,7 @@ input::placeholder {
 
 /* Style links */
 .footer-section a {
-    color: #4CAF50; /* Green links */
+    color: black; 
     text-decoration: none;
 }
 

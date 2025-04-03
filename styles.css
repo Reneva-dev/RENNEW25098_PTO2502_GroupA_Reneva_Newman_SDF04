@@ -1,7 +1,8 @@
 
 body {
-    background-color: #6AA690;
-}
+    background-color: #6AA690; 
+    padding: 25px;
+     }
 
 /*Button Styles*/
 
@@ -10,17 +11,32 @@ body {
     color: white;
     padding: 10px 20px; 
     border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    border-radius: 10px; 
+    cursor: pointer;
+    font-family: Helvetica;
+    font-weight: semi-bold;
+    
+}
+
+input {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 15px;
 }
     
 input::placeholder {
-    color: #F2F2F2;
+    color: #8f8d8d;
     font-size: 15px;  
-    padding: 10px 20px; 
+    padding: 25px 35px; 
     border: none; 
-    border-radius: 5px; 
+    border-radius: 25px; 
+    font-family: Helvetica;
+    font-weight: lighter;
 }
+
 
 /* Footer Container */
 .footer {
@@ -60,4 +76,13 @@ input::placeholder {
 img {
     width: 200px;
     height: auto;
+}
+
+h2, h3 {
+    font-family: Helvetica;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 25px;
 }

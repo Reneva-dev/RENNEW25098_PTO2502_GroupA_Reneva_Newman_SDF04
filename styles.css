@@ -1,15 +1,9 @@
-.footer {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
-    padding: 8px;
-    background-color:  #6AA690;
-    color: white; 
-}
 
 body {
     background-color: #6AA690;
 }
+
+/*Button Styles*/
 
 .subscribe-container button{
     background-color: #D96248;
@@ -37,6 +31,7 @@ input::placeholder {
     background-color: #6AA690; 
     color: black; /* black text */
     text-align: left; /* Align text to the left */
+    font-family: Helvetica,
 }
 
 /* Footer Sections */
@@ -62,3 +57,7 @@ input::placeholder {
     text-decoration: underline;
 }
 
+img {
+    width: 200px;
+    height: auto;
+}

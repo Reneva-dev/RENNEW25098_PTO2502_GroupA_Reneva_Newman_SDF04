@@ -95,6 +95,14 @@ img {
     height: auto;
 }
 
+.separator {
+    border: none; 
+    height: 1px; 
+    background-color:  #D96248; 
+    margin: 20px 0; 
+    width: 100%; 
+}
+
 h2, h3 {
     font-family: Helvetica;
     font-weight: normal;

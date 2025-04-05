@@ -23,9 +23,7 @@ body {
     cursor: pointer;
     font-family: Helvetica;
     font-weight: semi-bold;
-    
-    
-}
+    }
 
 input {
     width: 150px;
@@ -45,7 +43,6 @@ input::placeholder {
     font-family: Helvetica;
     font-weight: lighter;
 }
-
 
 /* Footer Container */
 .footer {
@@ -130,5 +127,16 @@ h3{
     .subscribe-container {
       order: -1;
       margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .subscribe-container input,
+    .subscribe-container button {
+      width: 100%;         /* Make both stretch full width on mobile */
+      height: 40px;        /* Same height */
+      font-size: 16px;
+      margin-bottom: 10px; /* Spacing between stacked items */
+      box-sizing: border-box; /* Ensures padding doesn't break width */
     }
   }

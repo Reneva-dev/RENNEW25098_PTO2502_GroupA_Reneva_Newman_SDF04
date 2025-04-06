@@ -146,19 +146,61 @@ h3 {
 }
 
 /* iPad Mini layout (768px to 1024px) */
-.footer {
-  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
-  gap: 24px; /* Adjust gap on desktop */
-}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Subscribe container settings */
+  .subscribe-container {
+    grid-column: span 2;  /* Ensure subscribe-container spans the full width */
+    display: flex;
+    flex-direction: column; /* Stack header above the input/button */
+    align-items: flex-start;  /* Keep all elements aligned to the left */
+    justify-content: flex-start; /* Align to the left */
+    gap: 10px; /* Add space between elements (header, input, button) */
+    margin-bottom: 20px; /* Adjust spacing below subscribe section */
+  }
 
-/* Ensure subscribe-container takes full width or adjust */
-.subscribe-container {
-  grid-column: span 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-}
+  .subscribe-container h2 {
+    margin-bottom: 10px; /* Ensure some space below the header */
+    text-align: left; /* Align the header text to the left */
+  }
+
+  /* Ensure the input and button are aligned horizontally */
+  .subscribe-container div {
+    display: flex;
+    flex-direction: row; /* Align input and button horizontally */
+    gap: 10px; /* Add space between input and button */
+    width: 100%; /* Full width for the container */
+  }
+
+  .subscribe-container input {
+    flex-grow: 1; /* Let the input grow to take available space */
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 70%; /* Input takes 70% of the space */
+  }
+
+  .subscribe-container button {
+    height: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #D96248;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto; /* Let button size adjust based on content */
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    margin-top: 20px; 
+    width: 100%; 
+  }
+
+
 /* Desktop Layout (min-width: 1024px) */
 @media (min-width: 1024px) {
   .footer {

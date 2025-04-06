@@ -1,236 +1,176 @@
-
 body {
-    background-color: #6AA690; 
-    padding: 25px;
-     }
+  background-color: #6AA690; 
+  padding: 25px;
+}
 
-     .container {
-        display: flex; 
-        justify-content: flex-start;
-        align-items: center;
-        gap: 300px; 
-        margin-top: 30px;
-    }
+.container {
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center;
+  gap: 200px; 
+  margin-top: 30px;
+}
 
-/*Button Styles*/
-
-.subscribe-container button{
-    background-color: #D96248;
-    color: white;
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer;
-    font-family: Helvetica;
-    font-weight: semi-bold;
-    }
+/* Button Styles */
+.subscribe-container button {
+  background-color: #D96248;
+  color: white;
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer;
+  font-family: Helvetica;
+  font-weight: semi-bold;
+}
 
 input {
-    width: 150px;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    text-align: left;
-    padding-left: 15px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 15px;
 }
-    
+
 input::placeholder {
-    color: #8f8d8d;
-    font-size: 15px;  
-    padding: 25px 35px; 
-    border: none; 
-    border-radius: 25px; 
-    font-family: Helvetica;
-    font-weight: lighter;
+  color: #8f8d8d;
+  font-size: 12px;  
+  padding: 15px 25px; 
+  border: none; 
+  border-radius: 25px; 
+  font-family: Helvetica;
+  font-weight: lighter;
+  align-items: left;
 }
 
 /* Footer Container */
 .footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-    gap: 260px; 
-    padding: 20px;
-    background-color: #6AA690; 
-    color: black; 
-    text-align: left; 
-    font-family: Helvetica,
+  display: grid;
+  grid-template-columns: 1fr; /* Default for mobile-first: stack vertically */
+  gap: 20px; 
+  padding: 20px;
+  background-color: #6AA690; 
+  color: black; 
+  text-align: left; 
+  font-family: Helvetica;
+}
+
+a {
+  text-decoration: none;
 }
 
 li {
-    font-family: Helvetica;
-    font-size: 13px;
-    font-weight: normal;
-    color: black;
-    padding: 3px 0px;
-    margin-bottom: 8px;
+  font-family: Helvetica;
+  font-size: 13px;
+  font-weight: normal;
+  color: black;
+  padding: 3px 0px;
+  margin-bottom: 8px;
 }
 
 /* Footer Sections */
 .footer-section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column; /* Stack items vertically inside each section */
 }
 
-/* Remove bullet points from lists */
 .footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Style links */
 .footer-section a {
-    color: black; 
-    text-decoration: none;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
+  color: black; 
 }
 
 img {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 .separator {
-    border: none; 
-    height: 1px; 
-    background-color:  #D96248; 
-    margin: 20px 0; 
-    width: 100%; 
+  border: none; 
+  height: 1px; 
+  background-color:  #D96248; 
+  margin: 20px 0; 
+  width: 100%; 
 }
 
+/* Heading Styles */
 h2, h3 {
-    font-family: Helvetica;
-    font-weight: normal;
+  font-family: Helvetica;
+  font-weight: normal;
 }
 
-h2{
-    font-size: 20px;
+h2 {
+  font-size: 20px;
 }
 
-h3{
-    font-size: 14px;
-    font-weight: normal;
-    margin-bottom: 8px;
+h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 8px;
 }
 
-@media (max-width: 700px) {
-    .footer {
-      grid-template-columns: 1fr;
-      text-align: left;
-      gap: 20px;
-      padding: 20px 10px;
-    }
-  
-    .subscribe-container {
-      order: -1;
-      margin-bottom: 1rem;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .subscribe-container input,
-    .subscribe-container button {
-      width: 100%;         /* Make both stretch full width on mobile */
-      height: 40px;        /* Same height */
-      font-size: 16px;
-      margin-bottom: 10px; /* Spacing between stacked items */
-      box-sizing: border-box; /* Ensures padding doesn't break width */
-    }
-  }
-
-  
 /* Default mobile-first layout */
 @media (max-width: 600px) {
-    .footer {
-      display: grid;
-      grid-template-columns: 1fr;  /* Stacks everything vertically */
+  .footer {
+      grid-template-columns: 1fr; /* Stack items vertically */
       gap: 20px;
       padding: 20px 10px;
-    }
-  
-    .subscribe-container {
+  }
+
+  .subscribe-container {
       width: 100%;
-      margin-bottom: 1.5rem; /* Spacing below subscribe section */
-    }
-  
-    .footer-section {
+      margin-bottom: 1.5rem;
+  }
+
+  .footer-section {
       margin-bottom: 1rem;
-    }
-  
-    .footer-section h3 {
+  }
+
+  .footer-section h3 {
       margin-bottom: 0.5rem;
-    }
-  
-    .subscribe-container input,
-    .subscribe-container button {
+  }
+
+  .subscribe-container input,
+  .subscribe-container button {
       width: 100%;
       height: 40px;
       font-size: 16px;
       margin-bottom: 10px;
       box-sizing: border-box;
-    }
   }
-  
-  @media (max-width: 1024px) and (min-width: 768px) {
-    .subscribe-container {
-        display: flex;              
-        flex-direction: row;         
-        gap: 10px;                   
-        align-items: center;         
-        justify-content: flex-start; 
-        margin-bottom: 10px;
-    }
+}
 
-    .footer {
-        margin-bottom: 10px;
-     }
+/* iPad Mini layout (768px to 1024px) */
+.footer {
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  gap: 24px; /* Adjust gap on desktop */
+}
 
-  
-    /* Move subscribe section to the top on tablets */
-    .subscribe-container {
-      order: -1;  
-      grid-column: span 2;  
-      padding-bottom: 10px;
+/* Ensure subscribe-container takes full width or adjust */
+.subscribe-container {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+}
+/* Desktop Layout (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .footer {
+      grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+      gap: 24px; /* Adjust gap on desktop */
+  }
 
-      display: flex; 
+  /* Ensure subscribe-container takes full width or adjust */
+  .subscribe-container {
+      grid-column: span 2;
+      display: flex;
       flex-direction: column;
-      align-items: flex-start; 
-    }
-
-    .subscribe-container h2 {
-        margin-bottom: 1rem;
-        text-align: left;
-      }
-  
-    .footer-section {
-      margin-bottom: 10px;
-    }
-  
-    .footer-section h3 {
-      margin-bottom: 0.5rem;
-      margin-top: 5px;
-    }
-  
-    .subscribe-container input,
-    .subscribe-container button {
-      height: 40px;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
+      align-items: flex-start;
   }
-
- .subscribe-container input {
-    width: 200% 
-    height: 35px;
-    margin-right: 10px; 
-    margin-bottom: 10px;
-  }
-
-  .subscribe-container button {
-    .subscribe-container button {
-        padding: 10px 20px; 
-        height: 35px;        
-    }
+}
